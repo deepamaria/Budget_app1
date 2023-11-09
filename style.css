@@ -1,0 +1,132 @@
+.body{
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.budget_container{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+}
+
+.display{
+    height: 20%;
+    width: 100%;
+    background-color: rgb(165, 164, 164);
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.balance_display{
+    height: 60%;
+    width: 20%;
+    background-color: orange;
+    color: rgb(255, 230, 0);
+    font-weight: 800;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+
+.income_display{
+    height: 60%;
+    width: 20%;
+    background-color: green;
+    color: rgb(255, 230, 0);
+    font-weight: 800;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+.expense_display{
+    height: 60%;
+    width: 20%;
+    background-color: red;
+    color: rgb(255, 230, 0);
+    font-weight: 800;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+
+.h3{
+    text-align: center;
+}
+
+.input_container, .log_container{
+    height: 40%;
+    width: 100%;
+    background-color: rgb(181, 167, 167);
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.income_container, .expense_container{
+    height: 60%;
+    width: 40%;
+    background-color: bisque;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.income_log_container, .expense_log_container{
+    height: 80%;
+    width: 48%;
+    background-color: rgb(223, 220, 220);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.income_log_div, .expense_log_div{
+height: 30px;
+width: 95%;
+background-color: aliceblue;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.income_log_p, .expense_log_p{
+    height: 10px;
+    width: 100%;
+    color: black;
+}
+
+
+.btn{
+    height: 30px;
+    width: 80px;
+    padding: 8px;
+    border-radius: 10px;
+}
+#receive_btn{
+    background-color: green;
+    color:white;
+}
+#pay_btn{
+    background-color: red;
+    color:white;
+}
+

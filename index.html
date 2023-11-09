@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    
+    <div class="budget_container" id="budget_container">
+
+        <div class="display" id="display">
+
+            <div class="balance_display" id="balance_display">
+                <p>Balance</p>
+            </div>
+
+            <div class="income_display" id="income_display">
+                <p>Income</p>
+            </div>
+
+            <div class="expense_display" id="expense_display">
+                <p>Expenses</p>
+            </div>
+
+        </div>
+
+        <!-- <h3 class="h3">Input your Income or expenses here</h3> -->
+        <div class="input_container" id="input_container">
+        
+            <div class="income_container" id="income_container">
+                <h3>Income</h3>
+                <input type="text" name="" id="inc_desc" placeholder="Enter Income Description">
+                <input type="text" name="" id="income" placeholder="Enter Income Amount">
+                <button id="receive_btn" class="btn">Receive</button>
+            </div>
+
+            <div class="expense_container" id="expense_container">
+                <h3>Expenses</h3>
+                <input type="text" name="" id="exp_desc" placeholder="Enter Expense Description">
+                <input type="text" name="" id="expense" placeholder="Enter Expense Amount">
+                <button id="pay_btn" class="btn">Pay</button>
+            </div>
+        </div>
+
+
+        <!-- <h3 class="h3">Log of Incomes or expenses</h3> -->
+        <div class="log_container" id="log_container">
+            <div class="income_log_container" id="income_log_container">
+                <h3>Income Log</h3>
+            </div>
+            <div class="expense_log_container" id="expense_log_container">
+                <h3>Expense Log</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
