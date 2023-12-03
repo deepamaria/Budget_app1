@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget_Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="budget_cont" class="budget_cont">
+        <div id="display" class="display">
+            <p id="income_display" class="income_display">0</p>
+            <p id="balance_display" class="balance_display">0</p>
+            <p id="expense_display" class="expense_display">0</p>
+        </div>
+
+        <div id="input_container" class="input_container">
+            <form id="income_form" class="income_form">
+                <h5>Input Income</h5>
+                <input required type="text" name="inc_desc" id="">
+                <input required type="text" name="inc_amt" id="">
+                <button type="submit">Receive</button>
+            </form>
+    
+            
+            <form id="expense_form" class="expense_form">
+                <h5>Input Expense</h5>
+                <input required type="text" name="exp_desc" id="">
+                <input required type="text" name="exp_amt" id="">
+                <button type="submit">Pay</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main1.js"></script>
+</body>
+</html>

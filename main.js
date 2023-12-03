@@ -1,8 +1,13 @@
 const body=document.body;
 const budget_container=document.getElementById("budget_container");
 const input_container=document.getElementById("input_container");
+
+const income_form=document.getElementById("income_form");
+const expense_form=document.getElementById("expense_form");
+
 const income_container=document.getElementById("income_container");
 const expense_container=document.getElementById("expense_container");
+
 const log_container=document.getElementById("log_container");
 const income_log_container=document.getElementById("income_log_container");
 const expense_log_container=document.getElementById("expense_log_container");
@@ -10,9 +15,12 @@ const expense_log_container=document.getElementById("expense_log_container");
 //adding classes to containers
 body.classList.add("body");
 budget_container.classList.add("budget_container");
+// input_container.classList.add("input_container");
+
 input_container.classList.add("input_container");
-income_container.classList.add("income_container");
-expense_container.classList.add("expense_container");
+income_form.classList.add("income_container");
+expense_form.classList.add("expense_container");
+
 log_container.classList.add("log_container");
 income_log_container.classList.add("income_log_container");
 expense_log_container.classList.add("expense_log_container");
@@ -55,7 +63,10 @@ budget_container.append(display,input_container,log_container);
 
 // balance_display.appendChild(balance_display_p);
 display.append(balance_display,income_display,expense_display);
-input_container.append(income_container,expense_container);
+input_container.append(income_form,expense_form);
+// income_container.appendChild(income_form);
+// expense_container.appendChild(expense_form);
+
 log_container.append(income_log_container,expense_log_container);
 
 balance_display.appendChild(balance_display_p);
@@ -66,6 +77,29 @@ balance_display_p.textContent="0";
 income_display_p.textContent="500";
 expense_display_p.textContent="500";
 
+let income_t=[
+    {
+        "t_id":1213,
+        "inc_desc":"From Dad",
+        "amount":34,
+        "type":"income"
+    }];
+
+let expense_t=[{
+        "t_id":Math.floor(Math.random()*10010),
+        "inc_desc":"From Dad",
+        "amount":12,
+        "type":"expense"
+    }];
+
+income_form.addEventListener("submit",function(e){
+e.preventDefault();
+console.log(232313);
+console.log(e.target.inc_amount.value);
+const i_data={t_id:Math.floor(Math.random()*10010),inc_desc:e.target.inc_desc.value,amount:e.target.inc_amount.value,type:income};
+income_t.push(i_data);
+console.log(income_t);
+})
 
 
 Rec_btn.addEventListener("click",function(){
